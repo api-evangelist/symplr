@@ -1,0 +1,23 @@
+aid: symplr
+name: symplr
+description: 'symplr is a company surfaced via the API Evangelist harvest backlog (source: manual:arazzo-vendor)
+  and added to the network as a stub for full-pipeline profiling.'
+url: https://raw.githubusercontent.com/api-evangelist/symplr/refs/heads/main/apis.yml
+x-type: company
+x-source: harvest:manual:arazzo-vendor
+x-tier: stub
+x-tier-reason: harvest
+specificationVersion: '0.20'
+created: '2026-09-16'
+modified: '2026-09-16'
+tags:
+- Company
+apis: []
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+- FN: APIs.json
+  email: info@apis.io
+common:
+- type: Website
+  url: https://www.symplr.com
