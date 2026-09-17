@@ -1,0 +1,52 @@
+generated: '2026-09-16'
+method: probed
+source: live HTTPS probes of every host this record knows
+note: >-
+  No served well-known document on any symplr host. www.symplr.com and symplr.com return 404 on every path.
+  portal.symplr.com (an Angular "Provider Portal") and trust.symplr.com (Conveyor) answer 200 with their own
+  HTML application shell for every /.well-known/* path — SPA catch-alls, recorded as misses. No WellKnown
+  pointer is emitted.
+hosts:
+- host: www.symplr.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404, file: null}
+  - {path: /.well-known/openid-configuration, status: 404, file: null}
+  - {path: /.well-known/oauth-authorization-server, status: 404, file: null}
+  - {path: /.well-known/oauth-protected-resource, status: 404, file: null}
+  - {path: /.well-known/api-catalog, status: 404, file: null}
+  - {path: /.well-known/ai-plugin.json, status: 404, file: null}
+  - {path: /.well-known/agent-card.json, status: 404, file: null}
+  - {path: /.well-known/agent.json, status: 404, file: null}
+- host: symplr.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404, file: null}
+  - {path: /.well-known/openid-configuration, status: 404, file: null}
+  - {path: /.well-known/api-catalog, status: 404, file: null}
+  - {path: /.well-known/agent-card.json, status: 404, file: null}
+- host: integrations.symplr.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404, file: null}
+  - {path: /.well-known/openid-configuration, status: 404, file: null}
+  - {path: /.well-known/oauth-authorization-server, status: 404, file: null}
+  - {path: /.well-known/api-catalog, status: 404, file: null}
+  - {path: /.well-known/ai-plugin.json, status: 404, file: null}
+  - {path: /.well-known/agent-card.json, status: 404, file: null}
+  - {path: /.well-known/agent.json, status: 404, file: null}
+- host: portal.symplr.com
+  documents:
+  - {path: /.well-known/security.txt, status: 200, file: null, note: SPA shell (text/html Provider Portal), not a document}
+  - {path: /.well-known/openid-configuration, status: 200, file: null, note: SPA shell, not a document}
+  - {path: /.well-known/oauth-authorization-server, status: 200, file: null, note: SPA shell, not a document}
+  - {path: /.well-known/api-catalog, status: 200, file: null, note: SPA shell, not a document}
+  - {path: /.well-known/ai-plugin.json, status: 200, file: null, note: SPA shell, not a document}
+  - {path: /.well-known/agent-card.json, status: 200, file: null, note: SPA shell, not a document}
+  - {path: /.well-known/agent.json, status: 200, file: null, note: SPA shell, not a document}
+- host: trust.symplr.com
+  documents:
+  - {path: /.well-known/security.txt, status: 200, file: null, note: Conveyor trust-center HTML shell, not a document}
+  - {path: /.well-known/openid-configuration, status: 200, file: null, note: HTML shell, not a document}
+  - {path: /.well-known/oauth-authorization-server, status: 200, file: null, note: HTML shell, not a document}
+  - {path: /.well-known/api-catalog, status: 200, file: null, note: HTML shell, not a document}
+  - {path: /.well-known/ai-plugin.json, status: 200, file: null, note: HTML shell, not a document}
+  - {path: /.well-known/agent-card.json, status: 200, file: null, note: HTML shell, not a document}
+  - {path: /.well-known/agent.json, status: 200, file: null, note: HTML shell, not a document}

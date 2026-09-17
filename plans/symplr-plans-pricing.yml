@@ -1,0 +1,9 @@
+generated: '2026-09-16'
+method: searched
+source: https://www.symplr.com/demo-request
+plan_count: 0
+plans: []
+note: >-
+  symplr publishes no pricing or plans. The site (2,472 sitemap URLs, no /pricing page) routes every product,
+  including the Contingent Talent Management API/integrations page, to "Request a demo" at /demo-request.
+  Enterprise sales only.

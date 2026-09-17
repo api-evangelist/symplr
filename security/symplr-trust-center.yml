@@ -1,0 +1,26 @@
+generated: '2026-09-16'
+method: searched
+probe: true
+source: https://trust.symplr.com/
+url: https://trust.symplr.com/
+platform: Conveyor
+access: >-
+  Public landing page listing badges and quick links; the 6 security documents and 195 FAQs are released
+  only after symplr approves the requester and an NDA or equivalent confidentiality obligation is in place.
+certifications:
+- ISO 27001:2022
+- HITRUST
+- SOC 2 Type II
+- SOC 1 Type II
+- HIPAA
+- NIST
+programs:
+- CISA Secure by Design pledge (https://www.cisa.gov/securebydesign/pledge, linked from https://www.symplr.com/platform/technology-security)
+evidence:
+- source: https://trust.symplr.com/
+  http_status: 200
+  quote: 'Badges ISO 27001:2022 HITRUST SOC 2 Type II SOC 1 Type II HIPAA NIST'
+note: >-
+  Corrected 2026-09-16. The keyword probe had also listed ISO 27017, ISO 27018, FedRAMP and GDPR. Those strings
+  occur only in the page's embedded JSON — in the certification lists of symplr's subprocessors (AWS, Azure) and
+  in Conveyor's global badge dictionary — not in symplr's own badges, so they are not credited to symplr.

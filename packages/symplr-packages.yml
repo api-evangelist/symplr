@@ -1,0 +1,19 @@
+generated: '2026-09-16'
+method: searched
+source: https://registry.npmjs.org/-/v1/search?text=symplr
+note: >-
+  No first-party API client library was found. npm search returns one package under symplr's public-forks GitHub
+  org (github.com/symplr-oss, "Public forks of projects"): a fork of an Angular on-screen keyboard, which is a UI
+  dependency and not an SDK for any symplr API. PyPI (pypi.org/pypi/symplr/json) returned 404. The GitHub org
+  github.com/symplr-software lists 0 public repositories.
+packages:
+- name: '@symplr-oss/ngx-material-keyboard-src'
+  registry: npm
+  url: https://www.npmjs.com/package/@symplr-oss/ngx-material-keyboard-src
+  repository: https://github.com/symplr-oss/ngx-material-keyboard-src
+  version: 0.2.3
+  published: '2020-06-02'
+  kind: ui-library
+  sdk: false
+  official: false
+  note: Fork of a third-party open-source Angular Material keyboard (MIT); not an API client.

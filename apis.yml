@@ -18,8 +18,7 @@ x-disambiguation: >-
   (symplr.io, docs.symplr.io, arazzo-editor.symplr.io — an AI app builder that also runs the "Workflow Builder for
   Arazzo"), an unrelated company that shares the name. Symplr.io links its own name to 101studio.co, lists
   contact@symplr.io, runs on separate DNS (Route 53) and mail (GoDaddy), and neither site links to the other,
-  so the Arazzo editor is not credited here. The x-source above records how this stub entered the backlog and
-  reflects that name collision. Halo Health, a symplr acquisition, has its own profile at all/halo-health-symplr.
+  so the Arazzo editor is not credited here. Halo Health, a symplr acquisition, has its own profile at all/halo-health-symplr.
 specificationVersion: '0.20'
 created: '2026-09-16'
 modified: '2026-09-16'
