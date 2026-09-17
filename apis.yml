@@ -1,17 +1,37 @@
 aid: symplr
 name: symplr
-description: 'symplr is a company surfaced via the API Evangelist harvest backlog (source: manual:arazzo-vendor)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  symplr (symplr software LLC, Houston) sells healthcare operations software to hospitals, health systems and
+  payers: provider data management and credentialing (symplr Provider, Directory, CVO, Payer), workforce and
+  talent management (Smart Square, symplr Workforce, formerly API Healthcare), quality and safety (Midas),
+  clinical communications, spend, access, contract and compliance management, unified as the symplr Operations
+  Platform. It markets APIs, webhooks and a certified partner program, but publishes no public API reference or
+  machine-readable contract.
+image: https://www.symplr.com/wp-content/uploads/2025/02/Generic-symplr2.jpg
 url: https://raw.githubusercontent.com/api-evangelist/symplr/refs/heads/main/apis.yml
 x-type: company
-x-source: harvest:manual:arazzo-vendor
+x-source: harvest:manual
 x-tier: stub
 x-tier-reason: harvest
+x-disambiguation: >-
+  This repo profiles symplr, the healthcare operations software company (www.symplr.com). It is NOT Symplr.io
+  (symplr.io, docs.symplr.io, arazzo-editor.symplr.io — an AI app builder that also runs the "Workflow Builder for
+  Arazzo"), an unrelated company that shares the name. Symplr.io links its own name to 101studio.co, lists
+  contact@symplr.io, runs on separate DNS (Route 53) and mail (GoDaddy), and neither site links to the other,
+  so the Arazzo editor is not credited here. The x-source above records how this stub entered the backlog and
+  reflects that name collision. Halo Health, a symplr acquisition, has its own profile at all/halo-health-symplr.
 specificationVersion: '0.20'
 created: '2026-09-16'
 modified: '2026-09-16'
 tags:
 - Company
+- Healthcare
+- Healthcare Operations
+- Provider Data Management
+- Credentialing
+- Workforce Management
+- Compliance
+- Supply Chain
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,3 +41,66 @@ maintainers:
 common:
 - type: Website
   url: https://www.symplr.com
+- type: Blog
+  url: https://www.symplr.com/blog
+- type: BlogRSS
+  url: https://www.symplr.com/feed
+- type: Support
+  url: https://www.symplr.com/customer-support
+- type: Login
+  url: https://www.symplr.com/login
+- type: TermsOfService
+  url: https://www.symplr.com/terms
+- type: PrivacyPolicy
+  url: https://www.symplr.com/privacy-policy
+- type: Partners
+  url: https://www.symplr.com/partnerships
+- type: Integrations
+  name: Contingent Talent Management API and Integrations
+  url: https://www.symplr.com/products/contingent-talent-management/integrations
+- type: LinkedIn
+  url: https://www.linkedin.com/company/symplr/
+- type: X
+  url: https://x.com/symplr
+- type: TrustCenter
+  url: security/symplr-trust-center.yml
+- type: Compliance
+  url: security/symplr-trust-center.yml
+- type: DomainSecurity
+  url: security/symplr-domain-security.yml
+- type: Packages
+  url: packages/symplr-packages.yml
+- type: Plans
+  url: plans/symplr-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/symplr-rate-limits.yml
+- type: LLMsTxt
+  url: llms/symplr-llms.txt
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: >-
+    symplr markets an "open API and secure webhook framework" for Contingent Talent Management and a partner
+    API behind "Request a demo", but the one public reference it ever ran, apidoc.symplr.com (a FHIR-shaped
+    Portfolio API using client_id/client_secret headers, per search-index snippets), no longer resolves, and no
+    OpenAPI, SDK, developer portal or well-known document is served on any symplr host.
+  evidence:
+  - url: https://apidoc.symplr.com/
+    status: 0
+    note: DNS NOERROR with no A record from 8.8.8.8, 1.1.1.1 and symplr's UltraDNS nameserver
+  - url: https://www.symplr.com/products/contingent-talent-management/integrations
+    status: 200
+  - url: https://developer.symplr.com/
+    status: 0
+  - url: https://www.symplr.com/openapi.json
+    status: 403
+  - url: https://www.symplr.com/.well-known/api-catalog
+    status: 404
+  - url: https://integrations.symplr.com/
+    status: 403
+  checked: '2026-09-16'
+x-enrichment:
+  date: '2026-09-16'
+  status: minimal
+  artifacts_added: 7
+  pass: local-v3
